@@ -201,13 +201,14 @@ export default {
   name: "loginPage",
 };
 </script>
+
 <style scoped>
 .page-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full height of the screen */
-  background-color: #222; /* Dark background */
+  background-color: #d8d1d1; /* Dark background */
   margin: 0; /* Remove default margin */
 }
 
@@ -218,7 +219,7 @@ export default {
   max-width: 400px; /* Restrict the width of the form */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  box-shadow: 0px 4px 8px rgba(245, 242, 242, 0.2); /* Light shadow */
   text-align: center;
   color: white;
   box-sizing: border-box; /* Ensure padding is included in the width calculation */
@@ -227,7 +228,7 @@ export default {
 /* Modal styling */
 .modal.fade.show {
   display: block;
-  background: rgba(0, 0, 0, 0.5); /* Background dimming effect */
+  background: rgba(207, 205, 205, 0.5); /* Background dimming effect */
   position: fixed;
   top: 0;
   left: 0;
@@ -244,95 +245,7 @@ export default {
 }
 
 .modal-content {
-  background-color: rgba(58, 58, 58, 0.85);
-  color: whitesmoke;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #ffeb3b;
-}
-
-/* Input styling */
-.form-control {
-  width: 100%;
-  background-color: #5f5f5f;
-  border: 1px solid #424242;
-  color: #e6e6e6;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Button styling */
-.form-button {
-  background-color: #7a6f3b;
-  color: #ffffff;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form-button:hover {
-  background-color: #a89050;
-}
-
-/* Modal Header */
-h4.text-whitesmoke {
-  color: whitesmoke;
-  border-bottom: 1px solid #ffeb3b;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-</style>
-<style scoped>
-.page-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Full height of the screen */
-  background-color: #222; /* Dark background */
-  margin: 0; /* Remove default margin */
-}
-
-.main-bg {
-  background-color: #424242;
-  background: linear-gradient(#424242, #212121);
-  width: 100%;
-  max-width: 400px; /* Restrict the width of the form */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
-  text-align: center;
-  color: white;
-  box-sizing: border-box; /* Ensure padding is included in the width calculation */
-}
-
-/* Modal styling */
-.modal.fade.show {
-  display: block;
-  background: rgba(0, 0, 0, 0.5); /* Background dimming effect */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-dialog {
-  max-width: 400px;
-  width: 100%;
-}
-
-.modal-content {
-  background-color: rgba(58, 58, 58, 0.85);
+  background-color: rgba(149, 147, 148, 0.85);
   color: whitesmoke;
   padding: 20px;
   border-radius: 8px;

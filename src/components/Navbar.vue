@@ -18,6 +18,7 @@
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/menu">Menu</router-link></li>
+          <li><router-link to="/post">Post</router-link></li>
           <li><router-link to="/events">Events</router-link></li>
 
           <li><router-link to="/chefs">Chefs</router-link></li>
@@ -27,10 +28,12 @@
           <li><router-link to="/contact">Contact</router-link></li>
         </ul>
 
-        <i
-          class="mobile-nav-toggle d-xl-none bi bi-list"
-          @click="toggleMobileMenu"
-        ></i>
+        <router-link to="/your-route">
+          <i
+            class="mobile-nav-toggle d-xl-none bi bi-list"
+            @click="toggleMobileMenu"
+          ></i>
+        </router-link>
       </nav>
 
       <router-link to="/login" class="btn-get-started">Login</router-link>

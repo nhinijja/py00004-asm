@@ -5,6 +5,7 @@ import LoginPage from '../components/login.vue';
 import HomePage from '../components/home.vue'; 
 import AboutPage from '../components/about.vue';
 import MenuPage from '../components/menu.vue'; 
+import postManagement from '../components/post.vue'; 
 import ContactPage from '../components/contact.vue'; 
 import EventsPage from '../components/events.vue'; 
 import ChefsPage from '../components/chefs.vue';
@@ -14,6 +15,7 @@ const routes = [
     { path: '/', component: HomePage, name: 'Home' }, // Trang chủ
     { path: '/about', component: AboutPage, name: 'About' },
     { path: '/menu', component: MenuPage, name: 'Menu' },
+    { path: '/post', component: postManagement, name: 'Post' },
     { path: '/contact', component: ContactPage, name: 'Contact' },
     { path: '/events', component: EventsPage, name: 'Events' },
     { path: '/chefs', component: ChefsPage, name: 'Chefs' },

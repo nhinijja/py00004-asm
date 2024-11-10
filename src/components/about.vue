@@ -15,7 +15,7 @@
           <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="" />
           <div class="book-a-table">
             <h3>Book a Table</h3>
-            <p>+1 5589 55488 55</p>
+            <p>0377420495</p>
           </div>
         </div>
         <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
