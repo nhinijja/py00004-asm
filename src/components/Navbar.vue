@@ -1,52 +1,101 @@
 <template>
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div
-      class="container position-relative d-flex align-items-center justify-content-between"
-    >
-      <a
-        href="index.html"
-        class="logo d-flex align-items-center me-auto me-xl-0"
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <router-link to="/" class="navbar-brand">
+        Burger <span>King</span>
+      </router-link>
+
+      <!-- Toggle Button for Mobile View -->
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
       >
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Yummy</h1>
-        <span>.</span>
-      </a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/menu">Menu</router-link></li>
-          <li><router-link to="/post">Post</router-link></li>
-          <li><router-link to="/events">Events</router-link></li>
+      <!-- Navbar Links -->
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ml-auto">
+          <router-link :to="{ name: 'Home' }" class="nav-item nav-link active"
+            >Home</router-link
+          >
 
-          <li><router-link to="/chefs">Chefs</router-link></li>
+          <router-link to="/about" class="nav-item nav-link active"
+            >About</router-link
+          >
 
-          <!-- Dropdown menu -->
+          <router-link to="/chefs" class="nav-item nav-link active"
+            >Chef</router-link
+          >
+          <router-link to="/menu" class="nav-item nav-link active"
+            >Menu</router-link
+          >
+          <router-link to="/events" class="nav-item nav-link active"
+            >Booking</router-link
+          >
+          <router-link to="/post" class="nav-item nav-link active"
+            >Post</router-link
+          >
+          <!-- Dropdown Menu -->
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              @click.prevent="toggleDropdown"
+              :class="{ show: dropdownOpen }"
+            >
+              Pages
+            </a>
+            <div class="dropdown-menu" :class="{ show: dropdownOpen }">
+              <router-link to="/single" class="dropdown-item"
+                >Blog Grid</router-link
+              >
+              <router-link to="/book" class="dropdown-item"
+                >Blog Detail</router-link
+              >
+            </div>
+          </div>
 
-          <li><router-link to="/contact">Contact</router-link></li>
-        </ul>
-
-        <router-link to="/your-route">
-          <i
-            class="mobile-nav-toggle d-xl-none bi bi-list"
-            @click="toggleMobileMenu"
-          ></i>
-        </router-link>
-      </nav>
-
-      <router-link to="/login" class="btn-get-started">Login</router-link>
+          <router-link to="/contact" class="nav-item nav-link active"
+            >Contact</router-link
+          >
+        </div>
+      </div>
+      <router-link to="/login" class="nav-item nav-link active"
+        >Login</router-link
+      >
     </div>
-  </header>
-
-  <!-- Sử dụng router-link để điều hướng đến trang đăng nhập -->
+  </nav>
 </template>
 
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      dropdownOpen: false,
+    };
+  },
+  methods: {
+    toggleDropdown() {
+      this.dropdownOpen = !this.dropdownOpen;
+    },
+  },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Styles for dropdown menu */
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.show {
+  display: block;
+}
+</style>

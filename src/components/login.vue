@@ -34,9 +34,7 @@
               Sign In
             </button>
           </form>
-          <a class="text-darkyellow" @click="showForgotPassword = true">
-            <small>Forgot your password?</small>
-          </a>
+
           <p class="text-whitesmoke text-center">
             <small>Do not have an account?</small>
           </p>
@@ -158,6 +156,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -207,28 +206,28 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full height of the screen */
-  background-color: #d8d1d1; /* Dark background */
-  margin: 0; /* Remove default margin */
+  height: 100vh;
+  background-color: #f0f0f0; /* Thay đổi nền sáng */
+  margin: 0;
 }
 
 .main-bg {
-  background-color: #424242;
-  background: linear-gradient(#424242, #212121);
+  background-color: #f5f5f5; /* Nền sáng */
+  background: linear-gradient(#f5f5f5, #e0e0e0);
   width: 100%;
-  max-width: 400px; /* Restrict the width of the form */
+  max-width: 400px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(245, 242, 242, 0.2); /* Light shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Màu bóng sáng hơn */
   text-align: center;
-  color: white;
-  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  color: #333333; /* Màu chữ tối */
+  box-sizing: border-box;
 }
 
 /* Modal styling */
 .modal.fade.show {
   display: block;
-  background: rgba(207, 205, 205, 0.5); /* Background dimming effect */
+  background: rgba(207, 205, 205, 0.3); /* Màu nền mờ sáng hơn */
   position: fixed;
   top: 0;
   left: 0;
@@ -245,8 +244,8 @@ export default {
 }
 
 .modal-content {
-  background-color: rgba(149, 147, 148, 0.85);
-  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.9); /* Nền sáng */
+  color: #333333;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ffeb3b;
@@ -255,19 +254,19 @@ export default {
 /* Input styling */
 .form-control {
   width: 100%;
-  background-color: #5f5f5f;
-  border: 1px solid #424242;
-  color: #e6e6e6;
+  background-color: #fafafa; /* Nền input sáng hơn */
+  border: 1px solid #ccc;
+  color: #333;
   border-radius: 4px;
   padding: 10px;
   margin-bottom: 15px;
   box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Button styling */
 .form-button {
-  background-color: #7a6f3b;
+  background-color: #8d6e63; /* Màu nút sáng hơn */
   color: #ffffff;
   padding: 10px;
   width: 100%;
@@ -278,12 +277,12 @@ export default {
 }
 
 .form-button:hover {
-  background-color: #a89050;
+  background-color: #a68b7a;
 }
 
 /* Modal Header */
 h4.text-whitesmoke {
-  color: whitesmoke;
+  color: #333333; /* Thay đổi màu tiêu đề sáng hơn */
   border-bottom: 1px solid #ffeb3b;
   padding-bottom: 10px;
   margin-bottom: 20px;

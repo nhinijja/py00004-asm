@@ -1,65 +1,61 @@
 <template>
-  <footer id="footer" class="footer dark-background">
+  <div class="footer">
     <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="footer-contact">
+                <h2>Our Address</h2>
+                <p><i class="fa fa-map-marker-alt"></i>08 Nguyen Hien</p>
+                <p><i class="fa fa-phone-alt"></i>0377420495</p>
+                <p><i class="fa fa-envelope"></i>nhi81924@gmail.com</p>
+                <div class="footer-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-link">
+                <h2>Quick Links</h2>
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contact</h4>
+        <div class="col-lg-5">
+          <div class="footer-newsletter">
+            <h2>Newsletter</h2>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br />
-              <strong>Email:</strong> <span>info@example.com</span><br />
+              Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum
+              nec non quam. Tortor eu placerat rhoncus, lorem quam iaculis
+              felis, sed lacus neque id eros.
             </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br />
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <div class="form">
+              <input class="form-control" placeholder="Email goes here" />
+              <button class="btn custom-btn">Submit</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>
-        © <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong>
-        <span>All Rights Reserved</span>
-      </p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <div class="copyright">
+      <div class="container">
+        <p>
+          Copyright &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+        </p>
+        <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>

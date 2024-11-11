@@ -1,208 +1,146 @@
 <template>
   <section id="about" class="about section">
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>About Us<br /></h2>
-      <p>
-        <span>Learn More</span> <span class="description-title">About Us</span>
-      </p>
-    </div>
-    <!-- End Section Title -->
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-          <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="" />
-          <div class="book-a-table">
-            <h3>Book a Table</h3>
-            <p>0377420495</p>
+    <div class="page-header mb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>About Us</h2>
+          </div>
+          <div class="col-12">
+            <a href="">Home</a>
+            <a href="">About Us</a>
           </div>
         </div>
-        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-          <div class="content ps-0 ps-lg-5">
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                <span
-                  >Ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</span
-                >
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                <span
-                  >Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span
-                >
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill"></i>
-                <span
-                  >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate trideta
-                  storacalaperda mastiro dolore eu fugiat nulla pariatur.</span
-                >
-              </li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident
-            </p>
+      </div>
+    </div>
+    <!-- Page Header End -->
 
-            <div class="position-relative mt-4">
-              <img src="assets/img/about-2.jpg" class="img-fluid" alt="" />
-              <a
-                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                class="glightbox pulsating-play-btn"
-              ></a>
+    <!-- Food Start -->
+    <div class="food mt-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="food-item">
+              <i class="flaticon-burger"></i>
+              <h2>Burgers</h2>
+              <p>
+                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit
+                facilis ornare velit non vulputa. Aliquam metus tortor auctor
+                quis sem.
+              </p>
+              <a href="">View Menu</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="food-item">
+              <i class="flaticon-snack"></i>
+              <h2>Snacks</h2>
+              <p>
+                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit
+                facilis ornare velit non vulputa. Aliquam metus tortor auctor
+                quis sem.
+              </p>
+              <a href="">View Menu</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="food-item">
+              <i class="flaticon-cocktail"></i>
+              <h2>Beverages</h2>
+              <p>
+                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit
+                facilis ornare velit non vulputa. Aliquam metus tortor auctor
+                quis sem.
+              </p>
+              <a href="">View Menu</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- /About Section -->
+    <!-- Food End -->
 
-  <!-- Why Us Section -->
-  <section id="why-us" class="why-us section light-background">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="why-box">
-            <h3>Why Choose Yummy</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-              aute irure dolor in reprehenderit Asperiores dolores sed et.
-              Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio
-              ad corporis.
-            </p>
-            <div class="text-center">
-              <a href="#" class="more-btn"
-                ><span>Learn More</span> <i class="bi bi-chevron-right"></i
-              ></a>
+    <!-- About Start -->
+    <div class="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="img/about.jpg" alt="Image" />
+              <button
+                type="button"
+                class="btn-play"
+                data-toggle="modal"
+                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                data-target="#videoModal"
+              >
+                <span></span>
+              </button>
             </div>
           </div>
-        </div>
-        <!-- End Why Box -->
-
-        <div class="col-lg-8 d-flex align-items-stretch">
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-xl-4">
-              <div
-                class="icon-box d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="bi bi-clipboard-data"></i>
-                <h4>Corporis voluptates officia eiusmod</h4>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header">
+                <p>About Us</p>
+                <h2>Cooking Since 1990</h2>
+              </div>
+              <div class="about-text">
                 <p>
-                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-                  laboris nisi ut aliquip
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                  vulputate. Aliquam metus tortor, auctor id gravida
+                  condimentum, viverra quis sem.
                 </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                  vulputate. Aliquam metus tortor, auctor id gravida
+                  condimentum, viverra quis sem. Curabitur non nisl nec nisi
+                  scelerisque maximus. Aenean consectetur convallis porttitor.
+                  Aliquam interdum at lacus non blandit.
+                </p>
+                <a class="btn custom-btn" href="">Book A Table</a>
               </div>
             </div>
-            <!-- End Icon Box -->
-
-            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-              <div
-                class="icon-box d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="bi bi-gem"></i>
-                <h4>Ullamco laboris ladore lore pan</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt
-                </p>
-              </div>
-            </div>
-            <!-- End Icon Box -->
-
-            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-              <div
-                class="icon-box d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="bi bi-inboxes"></i>
-                <h4>Labore consequatur incidid dolore</h4>
-                <p>
-                  Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-                  maiores omnis facere
-                </p>
-              </div>
-            </div>
-            <!-- End Icon Box -->
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- /Why Us Section -->
+    <!-- About End -->
 
-  <!-- Stats Section -->
-  <section id="stats" class="stats section dark-background">
-    <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in" />
-
+    <!-- Video Modal Start-->
     <div
-      class="container position-relative"
-      data-aos="fade-up"
-      data-aos-delay="100"
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
     >
-      <div class="row gy-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="232"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
-            <p>Clients</p>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
         </div>
-        <!-- End Stats Item -->
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="521"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
-            <p>Projects</p>
-          </div>
-        </div>
-        <!-- End Stats Item -->
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="1453"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-        <!-- End Stats Item -->
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="32"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
-            <p>Workers</p>
-          </div>
-        </div>
-        <!-- End Stats Item -->
       </div>
     </div>
   </section>

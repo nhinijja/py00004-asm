@@ -7,8 +7,11 @@ import AboutPage from '../components/about.vue';
 import MenuPage from '../components/menu.vue'; 
 import postManagement from '../components/post.vue'; 
 import ContactPage from '../components/contact.vue'; 
-import EventsPage from '../components/events.vue'; 
+import BookingPage from '../components/events.vue'; 
 import ChefsPage from '../components/chefs.vue';
+import SinglePage from '../components/book.vue';
+import BlogPage from '../components/single.vue';
+
 
 const routes = [
     { path: '/login', component: LoginPage, name: 'Login' },
@@ -17,8 +20,10 @@ const routes = [
     { path: '/menu', component: MenuPage, name: 'Menu' },
     { path: '/post', component: postManagement, name: 'Post' },
     { path: '/contact', component: ContactPage, name: 'Contact' },
-    { path: '/events', component: EventsPage, name: 'Events' },
+    { path: '/events', component: BookingPage, name: 'Booking' },
     { path: '/chefs', component: ChefsPage, name: 'Chefs' },
+    { path: '/single', component: BlogPage, name: 'Blog' },
+    { path: '/book', component: SinglePage, name: 'Single' },
 
     // Redirect to Home if path not found
     { path: '/:pathMatch(.*)*', redirect: '/' } 
